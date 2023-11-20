@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарные идеи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Montserrat:wght@400;500&family=Poppins&display=swap"
+        rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container orange">
+                <div class="header__inner">
+
+                    <nav class="menu">
+                        <a href="#!" class="logo">
+                            <!-- <img src="./img/logo-1.svg" alt="recipes"> -->
+                            <img src="./img/garlic.png" alt="" class="garlic">
+                            <div class="site-name">Кулинарные <br> Идеи</div>
+                        </a>
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <a href="#!" class="menu-list__link menu-list__link--active">Главная</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="search-page.html" class="menu-list__link">Рецепты</a>
+                                <ul class="submenu-list">
+                                    <li><a href="page1.html">Страница рецепта</a></li>
+                                    <li><a href="search-page.html">Завтрак</a></li>
+                                    <li><a href="search-page.html">Обед</a></li>
+                                    <li><a href="search-page.html">Ужин</a></li>
+                                    <li><a href="search-page.html">Десерты</a></li>
+                                    <li><a href="search-page.html">Напитки</a></li>
+                                    <li><a href="search-page.html">Снеки</a></li>
+                                    <li><a href="search-page.html">Праздничные и сезонные рецепты</a></li>
+                                    <li><a href="search-page.html">Быстро и просто</a>
+                                        <ul class="submenu-list">
+                                            <li><a href="search-page.html">Быстрый ужин</a></li>
+                                            <li><a href="search-page.html">Просто и полезно</a></li>
+                                            <li><a href="search-page.html">Заготовки еды</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="search-page.html">Кухни мира</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="menu-list__item">
+                                <a href="index.html" class="menu-list__link">Заметки</a>
+                            </li>
+
+                            <li class="menu-list__item">
+                                <a href="index.html" class="menu-list__link"> О нас</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="menu__buttons">
+                            <button class="button button__user">
+                               
+                                <ion-icon name="person-outline"></ion-icon>
+                            </button>
+                            <button class="button button__favorite">
+                               
+                                <ion-icon name="bookmarks-outline"></ion-icon>
+                            </button>
+                        </div>
+
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+        </header>
+
+
+        <main class="main">
+            <div class="container not-orange">
+
+                <div class="main-content">
+                        <div class="main-content__daily">
+                            <div class="daily-wrap">
+                                <a href="page1.html">
+                                    <div class="daily-content">
+                                        <div class="daily-content__text-1">
+                                            РЕЦЕПТ ДНЯ
+                                            <img src="./img/line.svg" alt="">
+                                        </div>
+                                        <p class="daily-content__text-2">РАТАТУЙ</p>
+                                        <p class="daily-content__text-3">Классический рецепт знаменитого блюда французской кухни
+                                        </p>
+                                        <div class="daily-content__about">
+                                            <div class="time"><ion-icon name="time"></ion-icon>20 мин</div>
+                                            <div class="difficulty"><ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon></div>
+                                        </div>
+                                        <div class="daily-content__next">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </a>
+           
+                            </div>
+                        </div>
+
+                    <div class="main-content__today">
+                        <div class="today-content">
+                            <h1 class="today-content__title">Что приготовить сегодня?</h1>
+                            <p class="today-content__description">Найдите своё идеальное блюдо с помощью <br> Кулинарных
+                                Идей!</p>
+                            <!-- <button class="button button--goSearch">Начать поиск <img src="./img/icons/letsSearch.svg" alt=""></button> -->
+                            <a href="search-page.html" class="today__link"><button id="uniqueButton"
+                                    class="button">Начать поиск <ion-icon name="search-outline"></ion-icon></button></a>
+                        </div>
+                    </div>
+
+                    <div class="main-content__latest">
+                        <div class="latest-content">
+                            <a href="page1.html"><h3 class="latest-content__title">НОВЫЕ РЕЦЕПТЫ <ion-icon name="chevron-forward-outline"></ion-icon></h3></a>
+                            <section class="latest-content__card-list">
+                                <!-- <article class="card">
+                                    <div class="imgBx">
+                                        <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                    </div>
+
+                                    <div class="contentBx">
+                                        <ul>
+                                            <li>Сырники</li>
+                                            <li><ion-icon name="time"></ion-icon>20 мин</li>
+                                            <li><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon></li>
+                                        </ul>
+                                        <div class="contentBx-next"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+
+                                    </div>
+
+                                </article>
+
+                                <article class="card">
+                                    <div class="imgBx">
+                                        <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                    </div>
+
+                                    <div class="contentBx">
+                                        <ul>
+                                            <li>Сырники</li>
+                                            <li><ion-icon name="time"></ion-icon>20 мин</li>
+                                            <li><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon></li>
+                                        </ul>
+                                        <div class="contentBx-next"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+
+                                    </div>
+
+                                </article>
+
+                                <article class="card">
+                                    <div class="imgBx">
+                                        <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                    </div>
+
+                                    <div class="contentBx">
+                                        <ul>
+                                            <li>Сырники</li>
+                                            <li><ion-icon name="time"></ion-icon>20 мин</li>
+                                            <li><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon></li>
+                                        </ul>
+                                        <div class="contentBx-next"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+
+                                    </div>
+
+                                </article> -->
+
+                                <article class="card">
+                                    <a href="page1.html">
+                                        <div class="imgBx imgBx-1">
+                                            <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                        <div class="contentBx">
+                                            <p>Тыквенный суп</p>    
+                                        </div>
+                                    </div>
+                                    </a>
+                               
+                                </article>
+                                <article class="card">
+                                    <a href="page1.html">
+                                        <div class="imgBx imgBx-2">
+                                            <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                        <div class="contentBx">
+                                            <p>Тако с овощами и гуакамоле</p>    
+                                        </div>
+                                    </div>
+                                    </a>
+                                
+                                </article>
+                                <article class="card">
+                                    <a href="page1.html">
+                                        <div class="imgBx imgBx-3">
+                                            <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                        <div class="contentBx">
+                                            <p>Запеченый лосось</p>    
+                                        </div>
+                                    </div>
+                                    </a>
+                               
+                                </article>
+                                <article class="card">
+                                    <a href="page1.html">
+                                        <div class="imgBx imgBx-4">
+                                            <div class="imgBx-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                                        <div class="contentBx">
+                                            <p>Взрывной шоколад</p>    
+                                        </div>
+                                    </div>
+                                    </a>
+                              
+                                </article>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-shape-divider-top-1697973245">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+
+    </div>
+    <div class="spacer mountains1">
+        <div class="container">
+            <div class="wrapper-slider">
+                <div class="wrapper-slider__about">
+                    <h2 class="wrapper-slider__title">Выбор редакции</h2>
+                    <p class="wrapper-slider__description">Ознакомьтесь с лучшими рецептами этого месяца!</p>
+                </div>
+                <!-- Слайдер -->
+                <div class="image-slider swiper">
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-1.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">
+                        <div class="image-slider__content">
+                            <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                            <div class="image-slider__content-bottom">
+                              <div class="image-slider__content-bottom__internals">
+                                  <h2 class="food-name">
+                                      Малиновый торт 
+                                  </h2>
+                                  <div class="food-time">
+                                      <div class="time">
+                                          <ion-icon name="time"></ion-icon>
+                                      </div>
+                                      <span>50 мин</span>
+                                  </div>
+                                  <div class="food-difficulty">
+                                    
+                                      <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                    
+                                  </div>
+              
+                              </div>
+                              <div class="image-slider__content-bottom__description">
+                                <p> Нежные бисквитные коржи, яркое малиновое варенье, облака взбитых сливок и свежая малина создают контраст между сладостью и кислинкой. </p>
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+   
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-2.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">
+                        <div class="image-slider__content">
+                            <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                            <div class="image-slider__content-bottom">
+                              <div class="image-slider__content-bottom__internals">
+                                  <h2 class="food-name">
+                                      Банановые панкейки
+                                  </h2>
+                                  <div class="food-time">
+                                      <div class="time">
+                                          <ion-icon name="time"></ion-icon>
+                                      </div>
+                                      <span>30 мин</span>
+                                  </div>
+                                  <div class="food-difficulty">
+                                    
+                                      <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                    
+                                  </div>
+              
+                              </div>
+                              <div class="image-slider__content-bottom__description">
+                                <p>Нежные, легкие блинчики. Топпинг из кленового сиропа, меда и свежих кусочков банана. Отличный выбор для завтрака или десерта!</p>
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+           
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-3.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">
+                        <div class="image-slider__content">
+                            <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                            <div class="image-slider__content-bottom">
+                              <div class="image-slider__content-bottom__internals">
+                                  <h2 class="food-name">
+                                      Гавайская пицца
+                                  </h2>
+                                  <div class="food-time">
+                                      <div class="time">
+                                          <ion-icon name="time"></ion-icon>
+                                      </div>
+                                      <span>60 мин</span>
+                                  </div>
+                                  <div class="food-difficulty">
+                                    
+                                      <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                    
+                                  </div>
+              
+                              </div>
+                              <div class="image-slider__content-bottom__description">
+                                <p>Для тех, кто ценит необычные сочетания вкусов, пицца с ананасами становится настоящим открытием.  </p>
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+                
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-4.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">          <div class="image-slider__content">
+                        <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                        <div class="image-slider__content-bottom">
+                          <div class="image-slider__content-bottom__internals">
+                              <h2 class="food-name">
+                                  Тосты с авокадо
+                              </h2>
+                              <div class="food-time">
+                                  <div class="time">
+                                      <ion-icon name="time"></ion-icon>
+                                  </div>
+                                  <span>15 мин</span>
+                              </div>
+                              <div class="food-difficulty">
+                                
+                                  <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                
+                              </div>
+          
+                          </div>
+                          <div class="image-slider__content-bottom__description">
+                            <p>Отличный способ начать свой день с баланса между белками, здоровыми жирами и витаминами.</p>
+                          </div>
+                        </div>
+                      </div></a>
+            
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-5.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">
+                        <div class="image-slider__content">
+                            <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                            <div class="image-slider__content-bottom">
+                              <div class="image-slider__content-bottom__internals">
+                                  <h2 class="food-name">
+                                      Медово-ягодные тосты
+                                  </h2>
+                                  <div class="food-time">
+                                      <div class="time">
+                                          <ion-icon name="time"></ion-icon>
+                                      </div>
+                                      <span>20 мин</span>
+                                  </div>
+                                  <div class="food-difficulty">
+                                    
+                                      <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                    
+                                  </div>
+              
+                              </div>
+                              <div class="image-slider__content-bottom__description">
+                                <p>Контраст сладкого меда и кислых ягод. Этот десертный завтрак точно поднимет вам настроение!</p>
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+           
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-6.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">
+                        <div class="image-slider__content">
+                            <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                            <div class="image-slider__content-bottom">
+                              <div class="image-slider__content-bottom__internals">
+                                  <h2 class="food-name">
+                                      Домашнее черничное мороженое
+                                  </h2>
+                                  <div class="food-time">
+                                      <div class="time">
+                                          <ion-icon name="time"></ion-icon>
+                                      </div>
+                                      <span>40 мин</span>
+                                  </div>
+                                  <div class="food-difficulty">
+                                    
+                                      <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                    
+                                  </div>
+              
+                              </div>
+                              <div class="image-slider__content-bottom__description">
+                                <p>Натуральная сладость и легкая кислинка ягод. Десерт без использования сахара!</p>
+                              </div>
+                            </div>
+                          </div>
+                      </a>
+         
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+                    <!-- Slide-start -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image">
+                        <img src="./img/trend-food/trend-food-7.jpg" alt="">
+                      </div>
+                      <!-- Slide-content-start -->
+                      <a href="page1.html">              <div class="image-slider__content">
+                        <div class="select-to-favorite"><ion-icon name="bookmarks-outline"></ion-icon></div>
+                        <div class="image-slider__content-bottom">
+                          <div class="image-slider__content-bottom__internals">
+                              <h2 class="food-name">
+                                  Шашлык из индейки
+                              </h2>
+                              <div class="food-time">
+                                  <div class="time">
+                                      <ion-icon name="time"></ion-icon>
+                                  </div>
+                                  <span>1 час 20 мин</span>
+                              </div>
+                              <div class="food-difficulty">
+                                
+                                  <ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant"></ion-icon><ion-icon name="restaurant-outline"></ion-icon>
+                                
+                              </div>
+          
+                          </div>
+                          <div class="image-slider__content-bottom__description">
+                            <p>Альтернатива традиционному шашлыку из говядины или свинины. Индейка - нежное и низкокалорийное мясо, богатое белками.</p>
+                          </div>
+                        </div>
+                      </div></a>
+        
+                      <!-- Slide-content-end -->
+                    </div>
+                    <!-- Slide-end -->
+          
+                  </div>
+                  <!-- Стрелки управления -->
+                  <div class="image-slider__control">
+                    <div class="swiper-button-prev slider-arrow">
+                      <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div class="swiper-button-next slider-arrow">
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <!-- Пагинация -->
+                    <div class="swiper-pagination"></div>
+          
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1697977949">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- <div class="container "> -->
+    <!-- <div class="spacer layer2 "></div> -->
+
+
+
+
+    <div class="middle">
+        <div class="container">
+            <div class="box-model">
+                <div class="box-model__box box-1">
+                    <a href="page1.html">
+                        <div class="box-content content-1">
+                            <h2 class="box-content__title">Правила хорошего бутерброда: как сделать перекус полезным?</h2>
+                            <p class="box-content__text">Стоит немного поработать с содержанием, и у вас в руках — сбалансированный перекус. Правильно составленная закуска надолго утолит голод и вряд ли отразится на талии. </p>
+    
+                        </div>
+                    </a>
+                 
+                </div>
+                <div class="box-model__box box-2">
+                    <a href="page1.html">
+                        <div class="box-content content-2">
+                            <h2 class="box-content__title">Кулинарные заметки</h2>
+                            <p class="box-content__text">Этот раздел познакомит вас с самыми интересными фактами, событиями и явлениями из мира кулинарии. Вы узнаете о полезных и вредных свойствах различных продуктов, распространенных кулинарных мифах и фактах.</p>
+                        </div>
+                    </a>
+                 
+                </div>
+                <div class="box-model__box box-3">
+                    <a href="page1.html">
+                        <div class="box-content content-3">
+                            <h2 class="box-content__title">Рецепты домашних заготовок: июньские радости для зимнего стола</h2>
+                            <p class="box-content__text">Заготовки — отличный способ сохранить витамины и полезные свойства ягод, фруктов и овощей на долгое время.</p>
+                            
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="box-model__box box-4">
+                    <a href="page1.html">
+                        <div class="box-content content-4">
+                            <h2 class="box-content__title">Чем отмыть жир: секреты чистой кухни.</h2>
+                            <p class="box-content__text">Как и чем отмыть жир с плиты, духовки, кухонного фартука и шкафов?</p>
+                        </div>
+                    </a>
+                   
+                </div>
+                <div class="box-model__box box-5">
+                    <a href="page1.html">
+                        <div class="box-content content-5">
+                            <h2 class="box-content__title">Простые рецепты блюд из тыквы: 20 проверенных идей</h2>
+                            <p class="box-content__text">Если в вашей семье любят этот осенний плод, самое время разнообразить меню и приготовить что-нибудь оригинальное. Угощайтесь!</p>
+                        </div>
+                    </a>
+                  
+                </div>
+                <div class="box-model__box box-6">
+                    <a href="page1.html">
+                        <div class="box-content content-6">
+                            <h2 class="box-content__title">Гостья из Азии: сковорода вок и ее особенности</h2>
+                            <p class="box-content__text">Кисло-острый суп «Том Ям» с морепродуктами, пикантная лапша удон с курицей и соусом терияки, китайские жареные пельмени с овощной начинкой...</p>
+                        </div>
+                    </a>
+                  
+                </div>
+                <div class="box-model__box box-7">
+                    <a href="page1.html">
+                        <div class="box-content content-7">
+                            <h2 class="box-content__title">Сила клетчатки: чем она полезна и в каких продуктах содержится</h2>
+                        </div>
+                    </a>
+                   
+                </div>
+                <div class="box-model__box box-8">
+                    <a href="page1.html">
+                        <div class="box-content content-8">
+                            <h2 class="box-content__title">Заточка ножей в домашних условиях: как навсегда решить «острый вопрос»</h2>
+                        </div>
+                    </a>
+                  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <div class="lower">
+        <div class="custom-shape-divider-top-1697982604">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+
+        </div>
+    </div>
+
+    <div class="almost-footer">
+        <!-- <section class="pink">
+            <div class="blob-content">
+
+            </div>
+            <svg class="blob-motion" id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            
+                <g transform="translate(451.92986315686153 159.78802461433364)">
+                    <path id="blob1"
+                        d="M90.5 -82.7C128 -53 176.5 -26.5 184.7 8.2C192.9 42.9 160.8 85.8 123.3 109C85.8 132.1 42.9 135.6 -0.6 136.2C-44.1 136.7 -88.2 134.5 -109.7 111.3C-131.2 88.2 -130.1 44.1 -129.7 0.4C-129.4 -43.4 -129.7 -86.7 -108.2 -116.4C-86.7 -146.1 -43.4 -162 -8.4 -153.6C26.5 -145.2 53 -112.4 90.5 -82.7"
+                        fill="#F2B279">
+                    </path>
+                </g>
+                <g transform="translate(467.49378964364837 145.12458779508506)" style="visibility:hidden">
+                    <path id="blob2"
+                    d="M88.4 -77.2C123.7 -53 167.9 -26.5 181.1 13.3C194.4 53 176.7 106.1 141.4 125.7C106.1 145.4 53 131.7 13.1 118.6C-26.9 105.5 -53.7 93.1 -86.6 73.4C-119.4 53.7 -158.2 26.9 -160.4 -2.2C-162.7 -31.3 -128.4 -62.7 -95.5 -86.9C-62.7 -111 -31.3 -128 -2.4 -125.6C26.5 -123.2 53 -101.4 88.4 -77.2" fill="#F2B279"></path></g>
+            </svg>
+            <script>
+                const tween = KUTE.fromTo(
+                    '#blob1',
+                    { path: '#blob1' },
+                    { path: '#blob2' },
+                    { repeat: 999, duration: 3000, yoyo: true }
+                )
+                tween.start()
+            </script>
+        </section>
+
+        <section class="blobs"></section> -->
+        <div class="container">
+
+            <div class="about-us">
+                <div class="about-us__heading">
+                    <p class="about-us__heading-title">О нас</p>
+                    <!-- <p>Нас объединяет любовь к </p> -->
+                </div>
+                <div class="about-us__content">
+                    <div class="us-team">
+                        <p>Наша дружная команда</p>
+                        <div class="team-images">
+
+                            <div class="team-member">
+                                <a class="member-avatar" href="#">
+                                  <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" />
+                                </a>
+                                <svg class="half-circle" viewBox="0 0 106 57">
+                                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                                </svg>
+                      
+                                <div class="member-name">
+                                  <div class="member-name-prefix">Ирина</div>
+                                  Главный редактор 
+                                </div>
+                            </div>
+
+                            <div class="team-member">
+                                <a class="member-avatar" href="#">
+                                  <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" />
+                                </a>
+                                <svg class="half-circle" viewBox="0 0 106 57">
+                                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                                </svg>
+                      
+                                <div class="member-name">
+                                  <div class="member-name-prefix">Ирина</div>
+                                  Дизайнер 
+                                </div>
+                            </div>
+
+                            <div class="team-member">
+                                <a class="member-avatar" href="#">
+                                  <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" />
+                                </a>
+                                <svg class="half-circle" viewBox="0 0 106 57">
+                                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                                </svg>
+                      
+                                <div class="member-name">
+                                  <div class="member-name-prefix">Ирина</div>
+                                  Разработчик 
+                                </div>
+                            </div>
+
+                            <div class="team-member">
+                                <a class="member-avatar" href="#">
+                                  <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" />
+                                </a>
+                                <svg class="half-circle" viewBox="0 0 106 57">
+                                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                                </svg>
+                      
+                                <div class="member-name">
+                                  <div class="member-name-prefix">Ирина</div>
+                                  Маркетолог 
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <a class="member-avatar" href="#">
+                                  <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" />
+                                </a>
+                                <svg class="half-circle" viewBox="0 0 106 57">
+                                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                                </svg>
+                      
+                                <div class="member-name">
+                                  <div class="member-name-prefix">Ирина</div>
+                                  Шеф-повар 
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <a class="member-avatar" href="#">
+                                  <img src="./img/sergey-semin-Y0WXj3xqJz0-unsplash.jpg" />
+                                </a>
+                                <svg class="half-circle" viewBox="0 0 106 57">
+                                  <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                                </svg>
+                      
+                                <div class="member-name">
+                                  <div class="member-name-prefix">Ирина</div>
+                                  Продукт-менеджер 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="us-description">
+                        <h3>Добро пожаловать на наш кулинарный веб-ресурс!</h3>
+                        <p>Мы - команда энтузиастов, объединенных общей страстью к кулинарии. Наш сайт – это результат тщательного труда и любви к готовке. Мы создали эту платформу с одной целью: сделать ваш кулинарный опыт ещё более увлекательным и приятным, вдохновлять вас на незабываемые кулинарные приключения.</p>
+                        <p>Мы понимаем, что в мире интернета существует множество других кулинарных сайтов. Однако, мы постарались воплотить лучшие идеи и практики в нашем проекте. Наша задача - предоставить вам всё необходимое в одном месте, сделав процесс приготовления блюд более доступным. Все, что вам понадобится – это ваша страсть к готовке и наш сайт.</p>
+                        <p>Спасибо, что выбрали нас. Мы надеемся, что наш сайт будет для вас надежным спутником в мире кулинарии. Наслаждайтесь готовкой, открывайте новые вкусы и создавайте великолепные блюда с нами!</p>
+                        <p>С любовью, <br>
+                            Команда "Кулинарные идеи"</p>
+                        <div class="about-us__read-more"><a href="search-page.html" class="today__link"><button id="uniqueButton"
+                            class="button">Поддержать проект</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li><a href="https://vk.com/morimorii" target="_blank"><ion-icon name="logo-vk"></ion-icon></a></li>
+                <li><a href="https://youtu.be/Efg9wz6x35Y?si=kY6Eo-yVT-UHxEiv" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href="https://www.twitch.tv/cookingfornoobs" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a></li>
+
+
+            </ul>
+            <ul class="bottom-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="search-page.html">Рецепты</a></li>
+                <li><a href="index.html">Заметки</a></li>
+                <li><a href="index.html">О нас</a></li>
+            </ul>
+            <p>@Кулинарные Идеи | Все права защищены</p>
+        </div>
+    </footer>
+   
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
